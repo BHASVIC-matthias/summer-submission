@@ -1,0 +1,391 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class maze here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class maze extends World
+{
+    int time;
+    /**
+     * Constructor for objects of class maze.
+     * 
+     */
+    public maze()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(800, 800, 1); 
+        prepare();
+    }
+    public void act()
+    {
+        time++;
+        if (time % 120  == 0)
+        {
+           addObject(new spider(), Greenfoot.getRandomNumber(550), Greenfoot.getRandomNumber(800));  
+       
+        }
+    }
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        spider spider = new spider();
+        addObject(spider, Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(550)); 
+        spider spider2 = new spider();
+        addObject(spider2, Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(550)); 
+        spider spider1 = new spider();
+        addObject(spider1, Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(550)); 
+
+        wallWidthSmall wallWidthSmall = new wallWidthSmall();
+        addObject(wallWidthSmall,517,339);
+        wallWidthSmall.setLocation(524,336);
+        wallWidthSmall wallWidthSmall2 = new wallWidthSmall();
+        addObject(wallWidthSmall2,575,337);
+        wallWidthSmall wallWidthSmall3 = new wallWidthSmall();
+        addObject(wallWidthSmall3,632,339);
+        wallWidthSmall3.setLocation(630,344);
+        wallWidthSmall3.setLocation(636,336);
+        wallWidthSmall2.setLocation(588,336);
+        wallWidthSmall2.setLocation(583,336);
+        wallWidthSmall wallWidthSmall4 = new wallWidthSmall();
+        addObject(wallWidthSmall4,569,390);
+        wallWidthSmall wallWidthSmall5 = new wallWidthSmall();
+        addObject(wallWidthSmall5,625,387);
+        wallWidthSmall wallWidthSmall6 = new wallWidthSmall();
+        addObject(wallWidthSmall6,681,387);
+        wallWidthSmall wallWidthSmall7 = new wallWidthSmall();
+        addObject(wallWidthSmall7,733,338);
+        wallWidthSmall7.setLocation(750,337);
+        wallWidthSmall wallWidthSmall8 = new wallWidthSmall();
+        addObject(wallWidthSmall8,750,337);
+        wallWidthSmall wallWidthSmall9 = new wallWidthSmall();
+        addObject(wallWidthSmall9,694,441);
+        wallWidthSmall wallWidthSmall10 = new wallWidthSmall();
+        addObject(wallWidthSmall10,530,498);
+        wallWidthSmall wallWidthSmall11 = new wallWidthSmall();
+        addObject(wallWidthSmall11,418,503);
+        wallWidthSmall wallWidthSmall12 = new wallWidthSmall();
+        addObject(wallWidthSmall12,354,499);
+        wallWidthSmall wallWidthSmall13 = new wallWidthSmall();
+        addObject(wallWidthSmall13,357,441);
+        wallWidthSmall wallWidthSmall14 = new wallWidthSmall();
+        addObject(wallWidthSmall14,288,445);
+        wallWidthSmall wallWidthSmall15 = new wallWidthSmall();
+        addObject(wallWidthSmall15,305,555);
+        wallWidthSmall wallWidthSmall16 = new wallWidthSmall();
+        addObject(wallWidthSmall16,465,550);
+        wallWidthSmall wallWidthSmall17 = new wallWidthSmall();
+        addObject(wallWidthSmall17,589,550);
+        wallWidthSmall wallWidthSmall18 = new wallWidthSmall();
+        addObject(wallWidthSmall18,736,499);
+        wallWidthSmall wallWidthSmall19 = new wallWidthSmall();
+        addObject(wallWidthSmall19,734,659);
+        wallWidthSmall wallWidthSmall20 = new wallWidthSmall();
+        addObject(wallWidthSmall20,675,660);
+        wallWidthSmall wallWidthSmall21 = new wallWidthSmall();
+        addObject(wallWidthSmall21,631,713);
+        wallWidthSmall.setLocation(526,336);
+        removeObject(wallWidthSmall);
+        removeObject(wallWidthSmall2);
+        removeObject(wallWidthSmall3);
+        removeObject(wallWidthSmall4);
+        removeObject(wallWidthSmall5);
+        removeObject(wallWidthSmall6);
+        wallWidthSmall9.setLocation(692,446);
+        removeObject(wallWidthSmall9);
+        wallWidthSmall18.setLocation(735,496);
+        removeObject(wallWidthSmall18);
+        removeObject(wallWidthSmall19);
+        removeObject(wallWidthSmall20);
+        wallWidthSmall21.setLocation(647,715);
+        wallWidthSmall21.setLocation(615,709);
+        removeObject(wallWidthSmall21);
+        removeObject(wallWidthSmall17);
+        removeObject(wallWidthSmall16);
+        wallWidthSmall10.setLocation(534,505);
+        removeObject(wallWidthSmall10);
+        wallWidthSmall7.setLocation(753,344);
+        removeObject(wallWidthSmall7);
+        removeObject(wallWidthSmall8);
+        removeObject(wallWidthSmall13);
+        removeObject(wallWidthSmall14);
+        removeObject(wallWidthSmall15);
+        removeObject(wallWidthSmall12);
+        removeObject(wallWidthSmall11);
+        wallHeightMedium wallHeightMedium = new wallHeightMedium();
+        addObject(wallHeightMedium,228,266);
+        wallHeightMedium wallHeightMedium2 = new wallHeightMedium();
+        addObject(wallHeightMedium2,228,336);
+        wallHeightMedium wallHeightMedium3 = new wallHeightMedium();
+        addObject(wallHeightMedium3,228,415);
+        wallHeightMedium wallHeightMedium4 = new wallHeightMedium();
+        addObject(wallHeightMedium4,227,493);
+        wallHeightMedium wallHeightMedium5 = new wallHeightMedium();
+        addObject(wallHeightMedium5,228,566);
+        wallHeightMedium wallHeightMedium6 = new wallHeightMedium();
+        addObject(wallHeightMedium6,229,625);
+        wallHeightMedium6.setLocation(229,667);
+        wallHeightMedium wallHeightMedium7 = new wallHeightMedium();
+        addObject(wallHeightMedium7,229,667);
+        wallHeightMedium7.setLocation(228,676);
+        wallHeightMedium wallHeightMedium8 = new wallHeightMedium();
+        addObject(wallHeightMedium8,228,676);
+        wallHeightMedium wallHeightMedium9 = new wallHeightMedium();
+        addObject(wallHeightMedium9,771,324);
+        wallHeightMedium wallHeightMedium10 = new wallHeightMedium();
+        addObject(wallHeightMedium10,770,398);
+        wallHeightMedium wallHeightMedium11 = new wallHeightMedium();
+        addObject(wallHeightMedium11,771,480);
+        wallHeightMedium wallHeightMedium12 = new wallHeightMedium();
+        addObject(wallHeightMedium12,771,566);
+        wallHeightMedium wallHeightMedium13 = new wallHeightMedium();
+        addObject(wallHeightMedium13,770,653);
+        wallHeightMedium wallHeightMedium14 = new wallHeightMedium();
+        addObject(wallHeightMedium14,770,731);
+        wallHeightMedium wallHeightMedium15 = new wallHeightMedium();
+        addObject(wallHeightMedium15,715,549);
+        wallHeightMedium15.setLocation(715,571);
+        wallHeightMedium wallHeightMedium16 = new wallHeightMedium();
+        addObject(wallHeightMedium16,715,571);
+        wallHeightMedium15.setLocation(711,534);
+        wallHeightMedium wallHeightMedium17 = new wallHeightMedium();
+        addObject(wallHeightMedium17,711,534);
+        wallHeightMedium17.setLocation(708,516);
+        removeObject(wallHeightMedium17);
+
+        addObject(wallHeightMedium17,606,502);
+        wallHeightMedium wallHeightMedium18 = new wallHeightMedium();
+        addObject(wallHeightMedium18,553,459);
+        wallHeightMedium18.setLocation(553,432);
+        wallHeightMedium wallHeightMedium19 = new wallHeightMedium();
+        addObject(wallHeightMedium19,553,432);
+        wallHeightMedium wallHeightMedium20 = new wallHeightMedium();
+        addObject(wallHeightMedium20,491,392);
+        removeObject(wallHeightMedium20);
+
+        addObject(wallHeightMedium20,444,512);
+        wallHeightMedium20.setLocation(443,482);
+        wallHeightMedium wallHeightMedium21 = new wallHeightMedium();
+        addObject(wallHeightMedium21,443,482);
+        wallHeightMedium wallHeightMedium22 = new wallHeightMedium();
+        addObject(wallHeightMedium22,499,403);
+        wallHeightMedium22.setLocation(497,368);
+        wallHeightMedium wallHeightMedium23 = new wallHeightMedium();
+        addObject(wallHeightMedium23,497,368);
+        wallHeightMedium wallHeightMedium24 = new wallHeightMedium();
+        addObject(wallHeightMedium24,280,346);
+        wallHeightMedium24.setLocation(279,330);
+        wallHeightMedium wallHeightMedium25 = new wallHeightMedium();
+        addObject(wallHeightMedium25,279,330);
+        wallHeightMedium wallHeightMedium26 = new wallHeightMedium();
+        addObject(wallHeightMedium26,284,483);
+        wallHeightMedium26.setLocation(284,506);
+        wallHeightMedium wallHeightMedium27 = new wallHeightMedium();
+        addObject(wallHeightMedium27,284,506);
+        wallHeightMedium wallHeightMedium28 = new wallHeightMedium();
+        addObject(wallHeightMedium28,444,646);
+        wallHeightMedium28.setLocation(445,666);
+        wallHeightMedium wallHeightMedium29 = new wallHeightMedium();
+        addObject(wallHeightMedium29,445,666);
+        wallHeightMedium wallHeightMedium30 = new wallHeightMedium();
+        addObject(wallHeightMedium30,662,537);
+        wallHeightMedium30.setLocation(662,563);
+        wallHeightMedium wallHeightMedium31 = new wallHeightMedium();
+        addObject(wallHeightMedium31,662,563);
+        wallWidthMedium wallWidthMedium = new wallWidthMedium();
+        addObject(wallWidthMedium,277,227);
+        wallWidthMedium wallWidthMedium2 = new wallWidthMedium();
+        addObject(wallWidthMedium2,358,226);
+        wallWidthMedium wallWidthMedium3 = new wallWidthMedium();
+        addObject(wallWidthMedium3,439,225);
+        wallWidthMedium wallWidthMedium4 = new wallWidthMedium();
+        addObject(wallWidthMedium4,530,222);
+        wallWidthMedium wallWidthMedium5 = new wallWidthMedium();
+        addObject(wallWidthMedium5,617,224);
+        wallWidthMedium wallWidthMedium6 = new wallWidthMedium();
+        addObject(wallWidthMedium6,708,226);
+        wallWidthMedium6.setLocation(736,224);
+        wallWidthMedium wallWidthMedium7 = new wallWidthMedium();
+        addObject(wallWidthMedium7,736,224);
+        wallWidthMedium wallWidthMedium8 = new wallWidthMedium();
+        addObject(wallWidthMedium8,665,282);
+        wallWidthMedium wallWidthMedium9 = new wallWidthMedium();
+        addObject(wallWidthMedium9,444,389);
+        wallWidthMedium wallWidthMedium10 = new wallWidthMedium();
+        addObject(wallWidthMedium10,608,392);
+        wallWidthMedium10.setLocation(666,388);
+        wallWidthMedium wallWidthMedium11 = new wallWidthMedium();
+        addObject(wallWidthMedium11,666,388);
+        wallWidthMedium wallWidthMedium12 = new wallWidthMedium();
+        addObject(wallWidthMedium12,605,606);
+        wallWidthMedium wallWidthMedium13 = new wallWidthMedium();
+        addObject(wallWidthMedium13,281,607);
+        wallWidthMedium wallWidthMedium14 = new wallWidthMedium();
+        addObject(wallWidthMedium14,335,711);
+        wallWidthMedium wallWidthMedium15 = new wallWidthMedium();
+        addObject(wallWidthMedium15,721,661);
+        wallWidthMedium wallWidthMedium16 = new wallWidthMedium();
+        addObject(wallWidthMedium16,555,332);
+        wallWidthMedium16.setLocation(611,330);
+        wallWidthMedium wallWidthMedium17 = new wallWidthMedium();
+        addObject(wallWidthMedium17,611,330);
+        wallWidthMedium wallWidthMedium18 = new wallWidthMedium();
+        addObject(wallWidthMedium18,393,500);
+        wallWidthMedium wallWidthMedium19 = new wallWidthMedium();
+        addObject(wallWidthMedium19,329,445);
+        wallWidthMedium wallWidthMedium20 = new wallWidthMedium();
+        addObject(wallWidthMedium20,715,766);
+        wallWidthMedium wallWidthMedium21 = new wallWidthMedium();
+        addObject(wallWidthMedium21,607,766);
+        wallWidthMedium wallWidthMedium22 = new wallWidthMedium();
+        addObject(wallWidthMedium22,500,766);
+        wallWidthMedium wallWidthMedium23 = new wallWidthMedium();
+        addObject(wallWidthMedium23,393,767);
+        wallWidthMedium wallWidthMedium24 = new wallWidthMedium();
+        addObject(wallWidthMedium24,297,766);
+        wallWidthMedium24.setLocation(260,766);
+        wallWidthMedium wallWidthMedium25 = new wallWidthMedium();
+        addObject(wallWidthMedium25,260,766);
+        wallHeightSmall wallHeightSmall = new wallHeightSmall();
+        addObject(wallHeightSmall,552,303);
+        wallHeightSmall wallHeightSmall2 = new wallHeightSmall();
+        addObject(wallHeightSmall2,444,307);
+        wallHeightSmall2.setLocation(446,317);
+        wallHeightSmall wallHeightSmall3 = new wallHeightSmall();
+        addObject(wallHeightSmall3,446,317);
+        wallHeightSmall wallHeightSmall4 = new wallHeightSmall();
+        addObject(wallHeightSmall4,498,255);
+        wallHeightSmall4.setLocation(500,264);
+        wallHeightSmall wallHeightSmall5 = new wallHeightSmall();
+        addObject(wallHeightSmall5,500,264);
+        wallHeightSmall wallHeightSmall6 = new wallHeightSmall();
+        addObject(wallHeightSmall6,337,321);
+        wallHeightSmall6.setLocation(334,303);
+        wallHeightSmall wallHeightSmall7 = new wallHeightSmall();
+        addObject(wallHeightSmall7,334,303);
+        wallHeightSmall wallHeightSmall8 = new wallHeightSmall();
+        addObject(wallHeightSmall8,389,357);
+        wallHeightSmall wallHeightSmall9 = new wallHeightSmall();
+        addObject(wallHeightSmall9,337,410);
+        wallHeightSmall wallHeightSmall10 = new wallHeightSmall();
+        addObject(wallHeightSmall10,391,527);
+        wallHeightSmall10.setLocation(391,534);
+        wallHeightSmall wallHeightSmall11 = new wallHeightSmall();
+        addObject(wallHeightSmall11,391,534);
+        wallHeightSmall wallHeightSmall12 = new wallHeightSmall();
+        addObject(wallHeightSmall12,499,627);
+        wallHeightSmall12.setLocation(501,637);
+        wallHeightSmall wallHeightSmall13 = new wallHeightSmall();
+        addObject(wallHeightSmall13,501,637);
+        wallHeightSmall wallHeightSmall14 = new wallHeightSmall();
+        addObject(wallHeightSmall14,552,625);
+        wallHeightSmall14.setLocation(554,645);
+        wallHeightSmall wallHeightSmall15 = new wallHeightSmall();
+        addObject(wallHeightSmall15,554,645);
+        wallHeightSmall wallHeightSmall16 = new wallHeightSmall();
+        addObject(wallHeightSmall16,388,623);
+        wallHeightSmall16.setLocation(392,641);
+        wallHeightSmall wallHeightSmall17 = new wallHeightSmall();
+        addObject(wallHeightSmall17,392,641);
+        wallHeightSmall wallHeightSmall18 = new wallHeightSmall();
+        addObject(wallHeightSmall18,282,672);
+        wallHeightSmall18.setLocation(283,689);
+        wallHeightSmall wallHeightSmall19 = new wallHeightSmall();
+        addObject(wallHeightSmall19,283,689);
+        wallHeightSmall wallHeightSmall20 = new wallHeightSmall();
+        addObject(wallHeightSmall20,553,735);
+        wallHeightSmall wallHeightSmall21 = new wallHeightSmall();
+        addObject(wallHeightSmall21,715,736);
+        wallHeightSmall wallHeightSmall22 = new wallHeightSmall();
+        addObject(wallHeightSmall22,606,682);
+        wallHeightSmall22.setLocation(607,695);
+        wallHeightSmall wallHeightSmall23 = new wallHeightSmall();
+        addObject(wallHeightSmall23,607,695);
+        wallHeightSmall wallHeightSmall24 = new wallHeightSmall();
+        addObject(wallHeightSmall24,661,681);
+        wallHeightSmall24.setLocation(660,697);
+        wallHeightSmall wallHeightSmall25 = new wallHeightSmall();
+        addObject(wallHeightSmall25,660,697);
+        wallHeightSmall wallHeightSmall26 = new wallHeightSmall();
+        addObject(wallHeightSmall26,660,412);
+        wallHeightSmall26.setLocation(662,424);
+        wallHeightSmall wallHeightSmall27 = new wallHeightSmall();
+        addObject(wallHeightSmall27,662,424);
+        wallHeightSmall wallHeightSmall28 = new wallHeightSmall();
+        addObject(wallHeightSmall28,608,359);
+        wallHeightSmall wallHeightSmall29 = new wallHeightSmall();
+        addObject(wallHeightSmall29,609,256);
+        wallHeightSmall wallHeightSmall30 = new wallHeightSmall();
+        addObject(wallHeightSmall30,390,257);
+        wallHeightSmall wallHeightSmall31 = new wallHeightSmall();
+        addObject(wallHeightSmall31,715,357);
+
+        wallWidthSmall wallWidthSmall22 = new wallWidthSmall();
+        addObject(wallWidthSmall22,691,445);
+        wallWidthSmall wallWidthSmall23 = new wallWidthSmall();
+        addObject(wallWidthSmall23,743,337);
+        wallWidthSmall wallWidthSmall24 = new wallWidthSmall();
+        addObject(wallWidthSmall24,525,333);
+        wallWidthSmall wallWidthSmall25 = new wallWidthSmall();
+        addObject(wallWidthSmall25,425,283);
+        wallWidthSmall wallWidthSmall26 = new wallWidthSmall();
+        addObject(wallWidthSmall26,251,286);
+        wallWidthSmall wallWidthSmall27 = new wallWidthSmall();
+        addObject(wallWidthSmall27,300,389);
+        wallWidthSmall wallWidthSmall28 = new wallWidthSmall();
+        addObject(wallWidthSmall28,357,337);
+        wallWidthSmall wallWidthSmall29 = new wallWidthSmall();
+        addObject(wallWidthSmall29,471,442);
+        wallWidthSmall wallWidthSmall30 = new wallWidthSmall();
+        addObject(wallWidthSmall30,583,387);
+        wallWidthSmall wallWidthSmall31 = new wallWidthSmall();
+        addObject(wallWidthSmall31,530,498);
+        wallWidthSmall wallWidthSmall32 = new wallWidthSmall();
+        addObject(wallWidthSmall32,585,550);
+        wallWidthSmall wallWidthSmall33 = new wallWidthSmall();
+        addObject(wallWidthSmall33,464,552);
+        wallWidthSmall wallWidthSmall34 = new wallWidthSmall();
+        addObject(wallWidthSmall34,300,553);
+        wallWidthSmall wallWidthSmall35 = new wallWidthSmall();
+        addObject(wallWidthSmall35,465,609);
+        wallWidthSmall wallWidthSmall36 = new wallWidthSmall();
+        addObject(wallWidthSmall36,301,660);
+        wallWidthSmall wallWidthSmall37 = new wallWidthSmall();
+        addObject(wallWidthSmall37,522,715);
+        wallWidthSmall wallWidthSmall38 = new wallWidthSmall();
+        addObject(wallWidthSmall38,630,716);
+        wallWidthSmall wallWidthSmall39 = new wallWidthSmall();
+        addObject(wallWidthSmall39,743,495);
+        wallHeightSmall wallHeightSmall32 = new wallHeightSmall();
+        addObject(wallHeightSmall32,496,422);
+        mouse mouse = new mouse();
+        addObject(mouse,262,741);
+        mouse.setLocation(241,734);
+        cake cake = new cake();
+        addObject(cake,528,250);
+        cake cake2 = new cake();
+        addObject(cake2,413,413);
+        cake cake3 = new cake();
+        addObject(cake3,520,575);
+        cake cake4 = new cake();
+        addObject(cake4,685,468);
+        cake cake5 = new cake();
+        addObject(cake5,684,728);
+        cake cake6 = new cake();
+        addObject(cake6,257,407);
+        cake cake7 = new cake();
+        addObject(cake7,685,347);
+        snake snake = new snake();
+        addObject(snake,581,417);
+        snake snake2 = new snake();
+        addObject(snake2,306,247);
+        snake snake3 = new snake();
+        addObject(snake3,630,569);
+    }
+}
